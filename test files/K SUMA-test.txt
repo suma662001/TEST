@@ -1,0 +1,127 @@
+constructor chain
+class Jacket{
+
+string brand;
+int price;
+
+Jacket ()
+{
+system.out.println(" no argument in jacket");
+}
+Jacket (String brand)
+{
+super();
+system.out.println(" invoking string in jacket");
+this.brand=brand;
+
+}
+Jacket(String brand,int price){
+this.brand=brand;
+this.price=price;
+system.out.println(" invoking string,int in jacket");
+}
+}
+class JacketRunner{
+public static void main("String[]args"){
+
+Jacket jacket=new jacket();
+system.out.println("main in brand"=+this.brand);
+system.out.println("main in price"=+this.price);
+this.brand="JAM";
+this.price=1000;
+
+
+}
+
+
+constructor overloading
+
+class Pocket{
+	String name;
+	 int slot;
+
+}
+class PocketKiller{
+	public static void main(String []args)
+	{
+	System.out.println(" invoking main in PocketKiller");
+	
+	    Pocket pocket= new Pocket();
+           System.out.println(pocket.name); //null
+           System.out.println(pocket.slot); //null
+        System.out.println(" ===================="); //null
+        pocket.name="prad";
+     	pocket.slot=6;
+
+       Pocket pocket1= new Pocket();
+           System.out.println(pocket1.name); //null
+           System.out.println(pocket1.slot); //null
+        System.out.println(" ===================="); //null
+        pocket.name="clothpocket";
+        pocket.slot=5;
+
+        }
+}
+
+
+
+
+Difference between heap and stackmemory:
+
+heap memory is a primary memory  which contains the stack memory,and metaspace,constant pool,instance pool,
+stack memory which create the stack frame which stores the line No and metods in that memory
+
+instance methos overloading :
+
+class Temple
+{
+
+stactic void prayer(string personName)
+{
+system.out.println("running main in personName");
+}
+stactic void prayer(int cost,)
+{
+system.out.println("running main in cost");
+}
+}
+class TempleRunner{
+
+public static void main(String []args)
+	{
+
+	System.out.println(" invoking main in templerunner");
+	Temple prayer=new Temple();
+        System.out.println("main in temple"+prayer.personName); 
+          
+        Temple prayer1=new Temple();
+        System.out.println("main in temple"+prayer1.cost); 
+          
+}
+
+
+JAVA variables:
+local variables: declare a variable inside the body of the method 
+instance var: declare a variable inside the body of the method but outside the class
+static var: declare using the static keyword
+
+class simple
+
+{
+  int a;
+  int b;
+  int c;
+public static void main (String []args){
+int  a=10;
+int b=20;
+int c=a+b;
+system.out.println("print c");
+}
+}
+
+
+
+
+
+		
+		
